@@ -7151,7 +7151,8 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::after {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1); }
 
 .demo-checkbox label, .demo-radio-button label {
-  min-width: 200px;
+  /* min-width: 200px; */
+  min-width: 100%;
   margin-bottom: 20px; }
 
 .demo-swtich .demo-switch-title, .demo-swtich .switch {

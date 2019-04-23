@@ -20,11 +20,12 @@ class CreateTasksTable extends Migration
             $table->string('tare_titu');
             $table->longText('tare_desc');
             $table->integer('tare_stat');
+            $table->integer('tare_orde')->nullable()->default(0);
             $table->dateTime('tare_venc');
-            $table->integer('created_by');
-            $table->integer('updated_by');
-            $table->integer('deleted_by');
-            $table->dateTime('deleted_at');
+            $table->integer('created_by')->nullable();
+            $table->integer('updated_by')->nullable();
+            $table->integer('deleted_by')->nullable();
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
             $table->foreign('tare_user')->references('id')->on('users');
         });

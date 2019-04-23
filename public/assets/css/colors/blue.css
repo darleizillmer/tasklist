@@ -172,3 +172,14 @@ a.link:hover, a.link:focus {
   background: #ffffff;
   color: #1e88e5;
 }
+#form_tarefa{
+    display:none;
+}
+.no_margin{margin: 0!important;}
+.risked{text-decoration: line-through!important;}
+.risked>small{text-decoration:none!important;}
+.edit-link, .cancel-link{
+    font-size: 12px;
+    color: #bbb;
+    margin: 0 10px
+}
