@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Darlei Fernando Zillmer">
-
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/favicon.png') }}">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -28,7 +28,6 @@
             }
         });
     </script>
-    
 </head>
 <body class="fix-header card-no-border logo-center">
     <div class="preloader">

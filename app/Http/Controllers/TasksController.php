@@ -44,9 +44,30 @@ class TasksController extends Controller
     {
         $dados = $request->all();
         $id = explode('md_checkbox_', $dados['id'])[1];
-        $task = $this->task->find($id);
+        $task = $this->task->findOrFail($id);
         $task->tare_stat = $dados['tipo'];
+        $task->updated_by = Auth::user()->id;
         $task->save();
+        return response()->json($task);
+    }
+    
+    public function atualizaTask(Request $request)
+    {
+        $dados = $request->all();
+        $task = $this->task->findOrFail($dados['tare_sequ']);
+        $task->tare_titu = $dados['tare_titu'];
+        $task->tare_venc = date('Y-m-d', strtotime(str_replace('/', '-',$dados['tare_venc'])));
+        $task->tare_desc = $dados['tare_desc'];
+        $task->updated_by = Auth::user()->id;
+        $task->save();
+        return response()->json($task);
+    }
+    
+    public function excluiTask(Request $request){
+        $dados = $request->all();
+        $id = explode('md_checkbox_', $dados['id'])[1];
+        $task = $this->task->findOrFail($id);
+        $task->delete();
         return response()->json($task);
     }
     
