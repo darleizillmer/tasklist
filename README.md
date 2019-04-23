@@ -1,10 +1,10 @@
 <h1>Como utilizar este projeto!</h1>
 <h3>Siga as etapas abaixo:</h3>
 <ol>
-    <li>Requisitos do servidor</li>
+    <li>Requisitos do servidor.</li>
 	<li>Clonar o repositório.</li>
-	<li>Configurar o arquivo "hosts" do sistema operacional.</li>
-	<li>Configurar o virtual-host no servidor web.</li>
+	<li>Instalar Dependências.</li>
+	<li>Configurar Base de Dados.</li>
 </ol>
 &nbsp;
 <h2>1. Requisitos do servidor</h2>
