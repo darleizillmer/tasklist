@@ -3,16 +3,6 @@
 <!-- ============================================================== -->
 <header class="topbar">
     <nav class="navbar top-navbar navbar-expand-md navbar-light">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-                <b>
-                    <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                    <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
-                </b>
-                <span>
-                 <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                 <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
-        </div>
         <div class="navbar-collapse">
             <ul class="navbar-nav mr-auto mt-md-0">
                 <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
@@ -62,7 +52,7 @@
                 <!-- ============================================================== -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="{{ asset('assets/images/user.png')}}" alt="user" class="profile-pic" /></a>
+                    <img src="{{ asset('assets/images/default.png')}}" alt="user" class="profile-pic" /></a>
                     <div class="dropdown-menu dropdown-menu-right scale-up">
                         <ul class="dropdown-user">
                             <li>
@@ -99,7 +89,6 @@
     <div class="scroll-sidebar">
         <nav class="sidebar-nav">
             <ul id="sidebarnav">
-                <li class="nav-small-cap">PERSONAL</li>
                 <li>
                     <a class="has-arrow" href="javascript:aviso();" aria-expanded="false">
                         <i class="mdi mdi-gauge"></i><span class="hide-menu"> {{ __('Dashboard') }} </span></a>

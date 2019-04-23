@@ -4,13 +4,8 @@
 
     var SweetAlert = function() {};
 
-    SweetAlert.prototype.init = function() {
+    SweetAlert.prototype.init = function() {},
     
-    // $('#sa-success').click(function(){
-        
-    // });
-
-    },
     $.SweetAlert = new SweetAlert, $.SweetAlert.Constructor = SweetAlert
 }(window.jQuery),
 

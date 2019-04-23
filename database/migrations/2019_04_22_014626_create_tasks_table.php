@@ -24,8 +24,6 @@ class CreateTasksTable extends Migration
             $table->dateTime('tare_venc');
             $table->integer('created_by')->nullable();
             $table->integer('updated_by')->nullable();
-            $table->integer('deleted_by')->nullable();
-            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
             $table->foreign('tare_user')->references('id')->on('users');
         });

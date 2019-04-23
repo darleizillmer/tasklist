@@ -178,8 +178,13 @@ a.link:hover, a.link:focus {
 .no_margin{margin: 0!important;}
 .risked{text-decoration: line-through!important;}
 .risked>small{text-decoration:none!important;}
-.edit-link, .cancel-link{
+.edit-link{
     font-size: 12px;
     color: #bbb;
+    margin: 0 10px
+}
+.cancel-link{
+    font-size: 12px;
+    color: red;
     margin: 0 10px
 }
