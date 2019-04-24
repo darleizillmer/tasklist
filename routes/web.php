@@ -14,6 +14,7 @@
 Route::group(['middleware' => 'auth'], function(){
     // Sem home/landing, levo direto pras tarefas ou login se nao estiver logado
     Route::get('/', ['as'=>'tasks.index', 'uses' => 'TasksController@index']);
+    Route::get('/home', ['as'=>'tasks.index', 'uses' => 'TasksController@index']);
     // Tasklist
     Route::get('tarefas', ['as'=>'tasks.index', 'uses' => 'TasksController@index']);
     Route::post('atualiza', ['as'=>'task.atualiza','uses' => 'TasksController@atualizaTask']);
@@ -22,7 +23,4 @@ Route::group(['middleware' => 'auth'], function(){
     Route::post('adiciona', ['as'=>'task.adiciona', 'uses' => 'TasksController@adicionaTask']);
 });
 
-
 Auth::routes();
-
-
